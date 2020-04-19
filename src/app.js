@@ -21,14 +21,7 @@ function validateRepositoryId(request, response, next) {
   return next();
 }
 
-const repositories = [
-  {
-    id: "iejsaiodsoka-sdaoklmaodask",
-    url: "https://github.com/arthur-es/rocketseat",
-    title: "Rocketseat GoStack Arthur",
-    likes: 2,
-  },
-];
+const repositories = [];
 
 app.get("/", (request, response) => {
   return response.json({ message: "Hello" });
